@@ -34,17 +34,7 @@ class ProductServiceApplicationTests {
 	@Autowired
 	private ProductRepository productRepository;
 
-	//@Container
-	//static MongoDBContainer mongoDBContainer = new MongoDBContainer("mongo:4.4.2");
-
-	/*
-	 * @DynamicPropertySource static void setProperties(DynamicPropertyRegistry
-	 * dynamicPropertyRegistry) {
-	 * dynamicPropertyRegistry.add("spring.data.mongodb.uri",
-	 * mongoDBContainer::getReplicaSetUrl); }
-	 */
-
-/**	@Test
+@Test
 	void shouldCreateProduct() throws Exception {
 		ProductRequest productRequest = getProductRequest();
 		String productRequestString = objectMapper.writeValueAsString(productRequest);
